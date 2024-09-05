@@ -1,0 +1,18 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+/* Lo de arriba es comoo la medida estandar para uniformidad de texto entre los navegadores*/
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+}
+/*comentarios/*
+/*el punto hace referencias a las clases*/
+
+.titulo span{
+    font-size: 2rem;
+}
