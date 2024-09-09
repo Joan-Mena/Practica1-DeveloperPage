@@ -3,21 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!--Importar el archivo normalize-->
+    <link rel="preload" href="CSS/normalize.CSS" as="style">
+    <link rel="stylesheet" href="CSS/normalize.CSS">
+
+    <!--Importar estilos de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@200;400;700&display=swap" rel="stylesheet">
+
+    <!--Enlace al CSS Personalizado-->
     <link rel="preload" href="CSS/styles.css" as="style">
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <title>Document</title>
 </head>
 <body>
     <header>
         <h1 class="titulo">Joan Antonio Mena <span>Developer</span></h1>
     </header>
-    <nav>
-        <!--href es un atributo para hacer referencias a otros sitios dentro de nuestra nav -->
-        <a href="#">inicio</a>
-        <a href="#">Sobre mi</a>
-        <a href="#">Clientes</a>
-        <a href="#">Contactos</a>
-    </nav>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <!--href es un atributo para hacer referencias a otros sitios dentro de nuestra nav -->
+            <a href="#">inicio</a>
+            <a href="#">Sobre mi</a>
+            <a href="#">Clientes</a>
+            <a href="#">Contactos</a>
+        </nav>
+    </div>
+   
     <section>
         <h2>Diseno y desarrollo web</h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -81,6 +95,7 @@
         <h2>Contacto</h2>
         <form action="">
             <fieldset>
+                <!--Legend es la etiqueta q le corresponde al titulo del formulario-->
                 <legend>Llena tus datos de contacto</legend>
                 <div>
                     <label>Nombre</label>
