@@ -131,3 +131,36 @@ mas especifico o mas definido*/
         width: 70%;
     }
 }
+
+/*servicios*/
+
+@media (min-width: 768px){
+    .servicios{
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+.servicio{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+    color: var(--secundario);
+    font-weight: normal;
+}
+p{
+    text-align: center;
+    line-height: 2; /*asi se pone el interliniado en CSS*/
+}
+.iconos{
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
